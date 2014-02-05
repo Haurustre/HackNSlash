@@ -1,11 +1,11 @@
 #Makefile
 CC=g++
-CFLAGS= -g -Wall -Werror
+CFLAGS=-Wall -Werror
 CPPFLAGS=-I$(INCLUDE)
 LDFLAGS=-L$(LIB)
 LDLIBS=
-OUTFILE=
-OBJS=
+OUTFILE=hackNslash
+OBJS=hackNSlash.o
 
 INCLUDE=include/
 LIB=lib/
@@ -14,7 +14,7 @@ all: $(OUTFILE)
 
 $(OUTFILE): $(OBJS)
 
-.o: .c
+hackNSlash.o: hackNSlash.cpp
 
 clean:
 	rm -f $(OBJS) $(OUTFILE)
