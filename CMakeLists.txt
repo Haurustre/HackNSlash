@@ -1,4 +1,8 @@
 #CMakeLists
 project ( HackNSlash )
 add_definitions ( -Wall )
-include_directories ( $(HackNSlash_SOURCE_DIR)/src )
+
+add_executable (
+  src/app/hackNSlash
+  src/app/hackNSlash.cpp
+)
